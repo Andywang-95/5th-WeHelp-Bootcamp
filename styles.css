@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto Sans Traditional Chinese&display=swap');
+body {
+    font-family: "Noto Sans Traditional Chinese";
+    font-size: 18px;
+    color: #F4F9F5;
+    background-image: url("image\\background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: #F0F6F133;
+    width:70vw;
+    max-width: 630px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1px 2em;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.title-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media (max-width:1250px) {
+    
+}
+
+@media (max-width:500px) {
+
+}
