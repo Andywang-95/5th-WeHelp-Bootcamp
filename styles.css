@@ -12,12 +12,20 @@ body {
 
 .container {
     background-color: #F0F6F133;
-    width:70vw;
-    max-width: 630px;
+    width: 70vw;
+    /* max-width: 630px; */
     min-width: 300px;
     margin: 0 auto;
     padding: 1px 2em;
     border-radius: 15px;
+}
+
+.item {
+    background-color: #11134BCC;
+    width: 95%;
+    margin: 3px auto;
+    padding: 0 10px;
+    border-radius: 5px;
 }
 
 h1 {
@@ -27,8 +35,31 @@ h1 {
 
 .title-text {
     font-size: 1.2em;
-    font-weight: bold;
+    /* font-weight: bold; */
+    padding: 5px;
+    margin: 0 auto 2px;
+    border-bottom: 1px solid #F4F9F5;
+    color: #DFDDA3;
 }
+
+.inner-text {
+    text-indent: 36px;
+    margin: 10px auto;
+    padding: 5px 0 15px;
+}
+
+a {
+    color: #F4F9F5;
+    border-radius: 2px;
+    border:1px solid #E1E3E299;
+    padding: 10px;
+    margin: 30px auto;
+}
+/* a:hover {
+    background-color: #E1E3E299;
+    border-radius: 2px;
+    padding: 1px;
+} */
 
 @media (max-width:1250px) {
     
