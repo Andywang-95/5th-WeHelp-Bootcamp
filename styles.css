@@ -48,18 +48,32 @@ h1 {
     padding: 5px 0 15px;
 }
 
+.web-link {
+    margin: -10px auto;
+}
+
+.exe-link {
+    margin: auto;
+    padding: 15px 0;
+}
+
 a {
     color: #F4F9F5;
     border-radius: 2px;
-    border:1px solid #E1E3E299;
-    padding: 10px;
-    margin: 30px auto;
-}
-/* a:hover {
-    background-color: #E1E3E299;
-    border-radius: 2px;
+    border:3px solid transparent;
     padding: 1px;
-} */
+    margin: 1px auto;
+}
+
+a:hover {
+    background-color: transparent;
+    border: 3px solid #E1E3E299;
+}
+
+a:active {
+    background-color: #E1E3E299;
+    border-color: transparent;
+}
 
 @media (max-width:1250px) {
     
