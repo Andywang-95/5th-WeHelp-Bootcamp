@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto Sans Traditional Chinese&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Playfair+Display:ital,wght@1,700&display=swap');
 body {
-    font-family: "Noto Sans Traditional Chinese";
+    font-family: "Noto Sans Traditional Chinese", serif;
     font-size: 18px;
     color: #F4F9F5;
     background-image: url("image\\background-image.jpg");
@@ -21,6 +22,7 @@ body {
 }
 
 .item {
+    position: relative;
     background-color: #11134BCC;
     width: 70%;
     margin: 3px auto;
@@ -57,7 +59,31 @@ h1 {
     padding: 15px 0;
 }
 
-a {
+.web-link::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 15px solid #AFABAB;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.exe-link::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-left: 15px solid #AFABAB;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+.inner-link {
     color: #F4F9F5;
     border-radius: 2px;
     border:3px solid transparent;
@@ -65,14 +91,41 @@ a {
     margin: 1px auto;
 }
 
-a:hover {
+.inner-link:hover {
     background-color: transparent;
     border: 3px solid #E1E3E299;
 }
 
-a:active {
+.inner-link:active {
     background-color: #E1E3E299;
     border-color: transparent;
+}
+
+footer {
+    font-family: "Lemon", serif;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#codelink-img {
+    width: 30px;
+    height: 30px;
+    border: 3px solid transparent;
+    margin-bottom: -8px;
+}
+
+#codelink-img:hover {
+    border: 3px solid #E1E3E299;
+    border-radius: 20px;
+}
+
+#footer-img {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 -12px 15px;
+}
+.footer-link {
+    color: #F4F9F5;
 }
 
 @media (max-width:1250px) {
